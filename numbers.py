@@ -11,6 +11,7 @@ lines = []
 next_dot = 0
 game_won = False
 
+#Create dots list pg. 74
 #Draw 10 dots to connect
 for dot in range(0, 15):    
     mydot = Actor("dot")
@@ -18,6 +19,7 @@ for dot in range(0, 15):
     dots.append(mydot)
 
 def draw():
+    #Create game windows with dots displayed pg. 75
     screen.fill("black")
     number = 1
     #Plot dots on the game screen
@@ -35,6 +37,7 @@ def draw():
 
 #Built-in functions using pgzrun to determine with mouse is clicked
 def on_mouse_down(pos):
+    #Create mouse_down function pg. 77
     global next_dot
     global lines
     global game_won
